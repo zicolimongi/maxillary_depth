@@ -18,14 +18,10 @@ RSpec.describe Exam, type: :model do
     it "when angle is greater than 90" do
       patient = Patient.create(name: "Mark")
       e = Exam.new(
-        point_n_x: 632.698,
-        point_n_y: 292.369,
-        point_a_x: 626.272,
-        point_a_y: 563.035,
-        point_po_x: 163.245,
-        point_po_y: 417.157,
-        point_or_x: 567.222,
-        point_or_y: 415.854,
+        point_n: Point.new(x: 632.698, y: 292.369),
+        point_a: Point.new(x: 626.272, y: 563.035),
+        point_po: Point.new(x: 163.245, y: 417.157),
+        point_or: Point.new(x: 567.222, y: 415.854),
         patient: patient
       )
       expect(e.maxillary_depth_angle).to be_within(0.01).of(88.45)
@@ -34,14 +30,10 @@ RSpec.describe Exam, type: :model do
     it "when angle is smaller than 90" do
       patient = Patient.create(name: "Mark")
       e = Exam.new(
-        point_n_x: 632.698,
-        point_n_y: 292.369,
-        point_a_x: 647.253,
-        point_a_y: 561.886,
-        point_po_x: 163.245,
-        point_po_y: 417.157,
-        point_or_x: 567.222,
-        point_or_y: 415.854,
+        point_n: Point.new(x: 632.698, y: 292.369),
+        point_a: Point.new(x: 647.253, y: 561.886),
+        point_po: Point.new(x: 163.245, y: 417.157),
+        point_or: Point.new(x: 567.222, y: 415.854),
         patient: patient
       )
       expect(e.maxillary_depth_angle).to be_within(0.01).of(92.90)
