@@ -9,10 +9,10 @@ O teste consiste em fazer algumas modificações neste projeto. Para isso, você
 ## Contextualização
 Todo paciente que é indicado para fazer um tratamento ortodôntico deve fazer um exame chamado cefalometria, que é um laudo realizado sobre a telerradiografia (radiografia lateral do crânio). Esse exame mede distâncias e ângulos do crânio e auxilia o ortodontista a fazer o planejamento. A partir disso, o ortodontista define quanto tempo e qual aparelho ortodôntico o paciente deverá usar. Uma dessas medidas, se chama profundidade maxilar, que é um ângulo formado por dois planos, chamados Po-Or e N-A. Po é o ponto pório, Or é o ponto orbital, N é o ponto násio e A é o ponto A. Então para conseguir medir esse ângulo, precisamos desses quatro pontos. Segue uma imagem para facilitar o entendimento.
 
+![profundidade maxilar](https://user-images.githubusercontent.com/1520828/59073049-ccdf3780-889b-11e9-8e10-c7b30175b4ae.png)
+
 ## Teste
 Separamos o teste em três partes e cada parte testa um conhecimento. Faça o maior número de partes que você conseguir, que isso vai impactar no salário que vamos te propor, conforme foi anunciado na vaga. Você pode usar qualquer gem ou plugin que precisar, caso não esteja especificado. O sistema que está no github tem o CRUD de paciente e você deverá modificar para que seja possível armazenar exames (paciente pode ter um ou mais exames), cada exame consiste no armazenamento desses 4 pontos. Além de armazenar os pontos você deve calcular o valor do ângulo conforme a figura.
-
-![profundidade maxilar](https://user-images.githubusercontent.com/1520828/59073049-ccdf3780-889b-11e9-8e10-c7b30175b4ae.png)
 
 ### Parte 1 - Conhecimentos gerais de RoR, matemática e lógica
 - Criar o CRUD de exames
